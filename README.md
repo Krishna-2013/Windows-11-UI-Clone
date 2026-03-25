@@ -4,8 +4,7 @@ A front-end project that replicates the look and feel of the Windows 11 desktop 
 
 ## 🚀 Live Demo
 
-👉 [View Project](#)
-*(Replace with your GitHub Pages link)*
+https://krishna-2013.github.io/Windows-11-UI-Clone/
 
 ---
 
@@ -29,7 +28,8 @@ A front-end project that replicates the look and feel of the Windows 11 desktop 
 
 ## 📷 Screenshots
 
-*(Add screenshots here — this is NOT optional if you want to look serious)*
+<img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/782b5062-ca7c-4e78-a422-0de033f5ad7c" />
+<img width="1919" height="857" alt="image" src="https://github.com/user-attachments/assets/1485215f-b333-4cb2-84bb-0f14471f7e60" />
 
 ---
 
