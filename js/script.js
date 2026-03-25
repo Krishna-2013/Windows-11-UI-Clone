@@ -19,43 +19,45 @@ const yesbtn = document.querySelector(".yes");
 const nobtn = document.querySelector(".no");
 
 // Batery bar
-navigator.getBattery().then(function (battery) {
-  const level = document.getElementById("level");
-  const percentText = document.getElementById("percent");
-  const chargingIcon = document.getElementById("charging");
+if (navigator.getBattery) {
+  navigator.getBattery().then(function (battery) {
+    const level = document.getElementById("level");
+    const percentText = document.getElementById("percent");
+    const chargingIcon = document.getElementById("charging");
 
-  function updateBattery() {
-    let percent = battery.level * 100;
+    function updateBattery() {
+      let percent = battery.level * 100;
 
-    level.style.width = percent + "%";
+      level.style.width = percent + "%";
 
-    if (percent < 20) {
-      level.style.background = "red";
-    } else if (percent < 50) {
-      level.style.background = "yellow";
-    } else {
-      level.style.background = "orange";
+      if (percent < 20) {
+        level.style.background = "red";
+      } else if (percent < 50) {
+        level.style.background = "yellow";
+      } else {
+        level.style.background = "orange";
+      }
+
+      if (percent === 100) {
+        percentText.textContent = `Battery status: Fully Charged ${percent}%`;
+      }
+
+      if (battery.charging) {
+        chargingIcon.style.display = "block";
+        level.style.background = "green";
+        percentText.textContent = `Battery status: ${percent}% (Plugged in)`;
+      } else {
+        chargingIcon.style.display = "none";
+        percentText.textContent = `Battery status: ${percent}% remaining`;
+      }
     }
 
-    if (percent === 100) {
-      percentText.textContent = `Battery status: Fully Charged ${percent}%`;
-    }
+    updateBattery();
 
-    if (battery.charging) {
-      chargingIcon.style.display = "block";
-      level.style.background = "green";
-      percentText.textContent = `Battery status: ${percent}% (Plugged in)`;
-    } else {
-      chargingIcon.style.display = "none";
-      percentText.textContent = `Battery status: ${percent}% remaining`;
-    }
-  }
-
-  updateBattery();
-
-  battery.addEventListener("levelchange", updateBattery);
-  battery.addEventListener("chargingchange", updateBattery);
-});
+    battery.addEventListener("levelchange", updateBattery);
+    battery.addEventListener("chargingchange", updateBattery);
+  });
+}
 
 //time and date
 function updateTime() {
@@ -112,7 +114,9 @@ setTimeout(() => {
   if (bgVideo) {
     bgVideo.style.display = "none";
   }
-  bgImage.style.display = "block";
+  if (bgImage) {
+    bgImage.style.display = "block";
+  }
 }, 5000);
 
 starticon.addEventListener("click", () => {

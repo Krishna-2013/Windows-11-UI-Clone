@@ -1,7 +1,8 @@
 .bg-image {
   display: none;
-  background-image: url("images/bg.jpeg");
+  background-image: url("../images/bg.jpeg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 91vh;
   width: 100vw;

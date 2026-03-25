@@ -7,7 +7,7 @@ body {
   display: flex;
   height: 300px;
   width: 300px;
-  background-image: url("images/myimg.jpg");
+  background-image: url("../images/myimg.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 50%;
