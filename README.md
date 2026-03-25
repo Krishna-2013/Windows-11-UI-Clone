@@ -28,7 +28,8 @@ https://krishna-2013.github.io/Windows-11-UI-Clone/
 
 ## 📷 Screenshots
 
-<img width="1919" height="860" alt="image" src="https://github.com/user-attachments/assets/782b5062-ca7c-4e78-a422-0de033f5ad7c" />
+<img width="1919" height="860" alt="Screenshot 2026-03-25 205724" src="https://github.com/user-attachments/assets/f91434bc-16b0-490f-8b09-8f3da6b4a4f0" />
+
 <img width="1919" height="857" alt="image" src="https://github.com/user-attachments/assets/1485215f-b333-4cb2-84bb-0f14471f7e60" />
 
 ---
