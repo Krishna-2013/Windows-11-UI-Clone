@@ -1,0 +1,110 @@
+body {
+  background-color: var(--bg-secondary-color);
+  color: var(--text-primary-color);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-2xl);
+}
+
+.power-btn {
+  margin: auto;
+  position: relative;
+  width: 110px;
+}
+
+.power-btn img {
+  display: block;
+  margin: auto;
+  margin-top: var(--space-3xl);
+  height: 10vh;
+  border: 10px solid black;
+  border-radius: 50%;
+  padding: var(--space-xs);
+  cursor: pointer;
+  box-shadow:
+    -8px -8px 15px rgba(255, 225, 255, 0.1),
+    8px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#powerOn2 {
+  display: none;
+}
+
+.power-btn:hover #powerOn {
+  display: none;
+}
+
+.power-btn:hover #powerOn2 {
+  display: block;
+  padding: var(--space-sm);
+  border-color: var(--bg-fill-color);
+  transition: border-color 0.3s ease;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: var(--space-3xl);
+  padding: var(--space-sm) var(--space-lg);
+  font-size: 16px;
+  background-color: var(--bg-fill-color);
+  border-radius: 6px;
+  cursor: pointer;
+  border: 3px solid black;
+  box-shadow:
+    -8px -8px 15px rgba(255, 225, 255, 0.1),
+    8px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: var(--bg-primary-color);
+  border-color: var(--bg-fill-color);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+  color: black;
+}
+
+#myimg {
+  display: none;
+  height: 300px;
+  width: 300px;
+  background-image: url("/images/myimg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.loader {
+  display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 10px solid #0c0c0c;
+  border-top: 10px solid #f4f2f3;
+  animation: Spin 2s ease-in-out 0s infinite normal;
+  padding: var(--space-sm);
+  margin: auto;
+  margin-top: 70px;
+  box-shadow: -8px -8px 15px rgba(255, 225, 255, 0.1);
+}
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+    display: none;
+    justify-content: center;
+    margin: var(--space-2xl);
+    font-size: 1.5rem;
+}

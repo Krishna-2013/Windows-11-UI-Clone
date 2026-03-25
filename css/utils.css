@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+:root {
+  /* background Colors */
+  --bg-primary-color: white;
+  --bg-secondary-color: #5d5d4d;
+  --bg-hover-color: rgba(195, 195, 195, 0.737);
+  --bg-startMenuUpper-color: rgb(215, 240, 255);
+  --bg-startMenuAllApps-color: rgb(255, 255, 255);
+  --bg-startMenuLower-color: rgb(237, 244, 248);
+
+  /* Text colors */
+  --text-primary-color: #f0f0f0;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 48px;
+  --space-4xl: 56px;
+  --space-5xl: 64px;
+  --space-6xl: 72px;
+  --space-7xl: 80px;
+  --space-8xl: 88px;
+
+  /* Border Colors*/
+  --border-primary-color: #333333;
+
+  /* Border Raduis */
+  --border-radius--xs: 4px;
+  --border-radius--sm: 8px;
+  --border-radius--md: 16px;
+  --border-radius--lg: 24px;
+  --border-radius--xl: 32px;
+  --border-radius--2xl: 40px;
+  --border-radius--3xl: 48px;
+}

@@ -1,0 +1,46 @@
+body {
+  background-color: var(--bg-secondary-color);
+  color: var(--text-primary-color);
+}
+
+#myimg {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-image: url("/images/myimg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: var(--space-5xl);
+}
+
+.loader {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 10px solid #0c0c0c;
+  border-top: 10px solid #f4f2f3;
+  animation: Spin 2s ease-in-out 0s infinite normal;
+  padding: var(--space-sm);
+  margin: auto;
+  margin-top: 70px;
+  box-shadow: -8px -8px 15px rgba(255, 225, 255, 0.1);
+}
+
+@keyframes Spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: var(--space-2xl);
+    font-size: 1.5rem;
+}
