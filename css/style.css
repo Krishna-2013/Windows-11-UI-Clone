@@ -1,6 +1,6 @@
 .bg-image {
   display: none;
-  background-image: url("/images/bg.jpeg");
+  background-image: url("images/bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 91vh;
